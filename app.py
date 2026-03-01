@@ -8,7 +8,6 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-from ddgs import DDGS
 
 os.environ["GROQ_API_KEY"]=os.getenv("GROQ_API_KEY")
 ##Arxiv  and Wikipedia tools
