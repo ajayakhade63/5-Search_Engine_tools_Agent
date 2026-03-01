@@ -19,5 +19,4 @@ jobs:
         run: |
           git config --global user.email "ajayakhade63@gmail.com"
           git config --global user.name "ajay-akhadeML-dhondiba"
-          git remote add space https://huggingface.co/spaces/ajay-akhadeML-dhondiba/Search_Engine_llm
-          git push https://ajay-akhadeML-dhondiba:${HF_TOKEN}@huggingface.co/spaces/ajay-akhadeML-dhondiba/Search_Engine_llm main
+          git push --force https://ajay-akhadeML-dhondiba:${HF_TOKEN}@huggingface.co/spaces/ajay-akhadeML-dhondiba/Search_Engine_llm main
