@@ -2,7 +2,7 @@ streamlit
 langchain
 langchain-community
 langchain-groq
-duckduckgo-search==4.4
+duckduckgo-search
 arxiv
 wikipedia
 python-dotenv
