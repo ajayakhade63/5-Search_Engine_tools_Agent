@@ -16,7 +16,8 @@ arxiv=ArxivQueryRun(api_wrapper=arxiv_wrapper)
 api_wrapper_wiki=WikipediaAPIWrapper(top_k_results=1,doc_content_chars_max=250)
 wiki=WikipediaQueryRun(api_wrapper=api_wrapper_wiki)
 
-search=DuckDuckGoSearchRun(name="Search")
+## search=DuckDuckGoSearchRun(name="Search")
+search = DuckDuckGoSearchResults()
 
 
 st.title("🔎 LangChain - Chat with search")
