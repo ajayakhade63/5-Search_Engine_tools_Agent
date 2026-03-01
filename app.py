@@ -8,6 +8,10 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
+## code
+#### 
+
+
 api_key = st.secrets["GROQ_API_KEY"]
 ##Arxiv  and Wikipedia tools
 arxiv_wrapper=ArxivAPIWrapper(top_k_results=1,doc_content_chars_max=200)
