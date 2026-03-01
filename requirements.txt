@@ -22,4 +22,4 @@ validators==0.28.1
 ## youtube_transcript_url_api
 numexpr
 huggingface_hub
-duckduckgo-serach
+duckduckgo-search
