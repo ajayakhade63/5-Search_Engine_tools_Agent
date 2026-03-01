@@ -17,7 +17,7 @@ api_wrapper_wiki=WikipediaAPIWrapper(top_k_results=1,doc_content_chars_max=250)
 wiki=WikipediaQueryRun(api_wrapper=api_wrapper_wiki)
 
 ## search=DuckDuckGoSearchRun(name="Search")
-search = DuckDuckGoSearchResults()
+##search = DuckDuckGoSearchResults()
 
 
 st.title("🔎 LangChain - Chat with search")
@@ -43,7 +43,7 @@ if prompt := st.chat_input(placeholder="what is machine learning?"):
     st.chat_message("user").write(prompt)
 
     llm=ChatGroq(groq_api_key=api_key,model_name="qwen/qwen3-32b",streaming=True)
-    tools=[search,arxiv,wiki]
+    tools=[arxiv,wiki]
 
     search_agent=initialize_agent(tools,llm,agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,handling_parsing_errors=True)
 
